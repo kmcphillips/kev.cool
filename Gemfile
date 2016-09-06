@@ -34,4 +34,8 @@ group :development do
   gem 'capistrano3-puma'
 end
 
+group :production do
+  gem 'therubyracer'
+end
+
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
