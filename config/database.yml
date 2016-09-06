@@ -1,0 +1,15 @@
+default: &default
+  adapter: mysql2
+  pool: 5
+  timeout: 5000
+  username: root
+  password:
+  host: localhost
+
+development:
+  <<: *default
+  database: kev_cool_development
+
+test:
+  <<: *default
+  database: kev_cool_test
