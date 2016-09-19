@@ -2,7 +2,7 @@
 lock '3.6.1'
 
 set :application, 'kev.cool'
-set :repo_url, 'git@github.com:kmcphillips/kev.cool.git'
+set :repo_url, 'https://github.com/kmcphillips/kev.cool.git'
 
 set :user, "deploy"
 set :rbenv_ruby, "2.3.1"
