@@ -5,6 +5,7 @@ class PingController < ApplicationController
       environment: Rails.env,
       ruby: RUBY_VERSION,
       internet: "definitely",
+      path: Rails.root.split.last.to_s,
     }.with_indifferent_access
   end
 end
