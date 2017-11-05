@@ -17,7 +17,7 @@ end
 group :development do
   gem 'web-console'
   gem 'listen', '~> 3.0.5'
-  gem 'spring'
+  # gem 'spring' # I don't even like spring, but it's incompatible with gems.rb at 2.0.2 for the moment
   gem 'capistrano'
   gem 'capistrano-rails'
   gem 'capistrano-rbenv'
