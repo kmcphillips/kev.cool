@@ -1,12 +1,14 @@
 body {
-    font-family: 'Mada', sans-serif;
+  background-color: #800020;
+}
+
+div.centered {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -120px;
 }
 
 h1 {
-    margin-left: 10px;
-    font-weight: bold;
-}
-
-h2 {
-    margin-left: 40px;
+  font-size: 7em;
 }
