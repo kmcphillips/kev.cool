@@ -38,10 +38,23 @@ append :linked_dirs, 'log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'public/.wel
 # Default value for keep_releases is 5
 set :keep_releases, 2
 
-# Unicorn
-# set :unicorn_pid, -> { File.join(current_path, "tmp", "pids", "unicorn.pid") }
-set :unicorn_config_path, -> { File.join(current_path, "config", "unicorn.rb") }
-# set :unicorn_roles, -> { :app }
-# set :unicorn_options, -> { "" }
-# set :unicorn_rack_env, -> { fetch(:rails_env) == "development" ? "development" : "deployment" }
-# set :unicorn_restart_sleep_time, 3
+set :puma_user, 'deploy'
+# set :puma_rackup, -> { File.join(current_path, 'config.ru') }
+# set :puma_state, "#{shared_path}/tmp/pids/puma.state"
+# set :puma_pid, "#{shared_path}/tmp/pids/puma.pid"
+# set :puma_bind, "unix://#{shared_path}/tmp/sockets/puma.sock"
+# set :puma_default_control_app, "unix://#{shared_path}/tmp/sockets/pumactl.sock"
+# set :puma_conf, "#{shared_path}/puma.rb"
+# set :puma_access_log, "#{shared_path}/log/puma_access.log"
+# set :puma_error_log, "#{shared_path}/log/puma_error.log"
+# set :puma_role, :app
+# set :puma_env, fetch(:rack_env, fetch(:rails_env, 'production'))
+# set :puma_threads, [0, 16]
+# set :puma_workers, 0
+# set :puma_worker_timeout, nil
+# set :puma_init_active_record, false
+# set :puma_preload_app, false
+# set :puma_plugins, []
+# set :nginx_use_ssl, false
+
+set :bundle_gemfile, -> { File.join(current_path, 'gems.rb') }

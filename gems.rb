@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 gem 'rails', '5.2.0'
 gem 'mysql2'
-gem 'puma', '~> 3.0'
+gem 'puma'
 gem 'bootsnap'
 
 gem 'sass-rails', '~> 5.0'
@@ -22,10 +22,9 @@ group :development do
   gem 'capistrano', '3.6.1'
   gem 'capistrano-rails'
   gem 'capistrano-rbenv'
-  gem 'capistrano3-unicorn'
+  gem 'capistrano3-puma'
 end
 
 group :production do
   gem 'therubyracer'
-  gem 'unicorn'
 end
