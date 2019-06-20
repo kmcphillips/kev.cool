@@ -56,5 +56,4 @@ set :puma_user, 'deploy'
 # set :puma_preload_app, false
 # set :puma_plugins, []
 # set :nginx_use_ssl, false
-
-set :bundle_gemfile, -> { File.join(current_path, 'gems.rb') }
+# set :bundle_gemfile, -> { File.join(current_path, 'gems.rb') }
