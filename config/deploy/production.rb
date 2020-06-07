@@ -18,6 +18,18 @@ namespace :deploy do
   end
 end
 
+namespace :check do
+  desc "test sending mail from the server"
+  task :email do
+    on roles(:app) do
+      within release_path do
+        with rails_env: fetch(:rails_env) do
+          rake "check:email"
+        end
+      end
+    end
+  end
+end
 
 
 # server-based syntax

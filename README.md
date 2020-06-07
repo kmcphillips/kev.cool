@@ -3,8 +3,8 @@
 This is a rails app I mostly use to canary test deployment and infrastructure.
 
 
-Test with things like this from a console:
+## Commands
 
 ```
-ExampleMailer.test.deliver
+cap production check:email
 ```
