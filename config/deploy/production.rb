@@ -1,4 +1,4 @@
-set :branch, "master"
+set :branch, "main"
 set :deploy_to, "/var/apps/kev.cool"
 
 role :web, "app1.kev.cool"
