@@ -5,7 +5,7 @@ set :application, 'kev.cool'
 set :repo_url, 'https://github.com/kmcphillips/kev.cool.git'
 
 set :user, "deploy"
-set :rbenv_ruby, "2.6.0"
+set :rbenv_ruby, "3.0.2"
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
