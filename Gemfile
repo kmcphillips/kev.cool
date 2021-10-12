@@ -19,7 +19,7 @@ end
 group :development do
   gem 'web-console'
   gem 'listen', '~> 3.0.5'
-  gem 'capistrano', '3.6.1'
+  gem 'capistrano', '3.16.0'
   gem 'capistrano-rails'
   gem 'capistrano-rbenv'
   gem 'capistrano3-puma'
