@@ -18,6 +18,14 @@ namespace :deploy do
   end
 end
 
+namespace :deploy do
+  task :restart do
+    on roles(:app) do
+      execute "sudo service puma-kev.cool restart"
+    end
+  end
+end
+
 namespace :check do
   desc "test sending mail from the server"
   task :email do
