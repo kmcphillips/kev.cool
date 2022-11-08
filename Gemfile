@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 gem 'rails', '~> 6.0.0'
 gem 'mysql2'
+gem 'redis'
 gem 'puma'
 gem 'bootsnap'
 gem 'sidekiq'

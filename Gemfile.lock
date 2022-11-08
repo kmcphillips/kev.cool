@@ -243,6 +243,7 @@ DEPENDENCIES
   puma
   rails (~> 6.0.0)
   rails-controller-testing
+  redis
   rspec-rails
   sass-rails (~> 5.0)
   sidekiq
