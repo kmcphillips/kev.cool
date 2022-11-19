@@ -14,7 +14,7 @@ gem "stimulus-rails"
 gem "tailwindcss-rails"
 gem "jbuilder"
 gem "bootsnap", require: false
-gem "sidekiq", "6.2.2" # This can be updated and is only used for the web console
+gem "sidekiq", "6.4.0" # This can be updated and is only used for the web console
 
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"

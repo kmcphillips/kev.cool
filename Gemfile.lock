@@ -170,7 +170,7 @@ GEM
       rspec-mocks (~> 3.11)
       rspec-support (~> 3.11)
     rspec-support (3.12.0)
-    sidekiq (6.2.2)
+    sidekiq (6.4.0)
       connection_pool (>= 2.2.2)
       rack (~> 2.0)
       redis (>= 4.2.0)
@@ -217,7 +217,7 @@ DEPENDENCIES
   rails-controller-testing
   redis (~> 4.0)
   rspec-rails
-  sidekiq (= 6.2.2)
+  sidekiq (= 6.4.0)
   sprockets-rails
   stimulus-rails
   tailwindcss-rails
