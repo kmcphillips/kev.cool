@@ -1,0 +1,70 @@
+==================================================================
+https://keybase.io/kmcphillips
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://kev.cool
+  * I am kmcphillips (https://keybase.io/kmcphillips) on keybase.
+  * I have a public key with fingerprint FA50 A01E 100E F1A4 A66B  C09D 3B6E BB01 886B 72AC
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "010101aeffc857eab674720eebc9540cdbe745de8741096ac50d695f28016ae961490a",
+      "fingerprint": "fa50a01e100ef1a4a66bc09d3b6ebb01886b72ac",
+      "host": "keybase.io",
+      "key_id": "3b6ebb01886b72ac",
+      "kid": "010101aeffc857eab674720eebc9540cdbe745de8741096ac50d695f28016ae961490a",
+      "uid": "1c94f32b1cc6a8efad4103c744163300",
+      "username": "kmcphillips"
+    },
+    "service": {
+      "hostname": "kev.cool",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1549921195,
+  "expire_in": 157680000,
+  "prev": "670c75a8374850c638c893b8ac15c67d98b4383818c0cc0b0520fc4bb35deac1",
+  "seqno": 9,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.80
+Comment: https://keybase.io/crypto
+
+yMIpAnicrVJbSFRBGF6t7bKR9BDd6ALnwYcSm9lzX0ortov0UHZPq3Vmzhw9tZ6z
+nnPcbTGpzAoEI1Cyh4rClogIkswK2igrqIzudKGLRRTGGkhGQUo1R/Ktx2Ye5vZ9
+33z/x39z/AhfIOv3hxODt9Krb2R1XT9U7duEMmdqOGxpSS5Uw22jQwuNatRxI9sM
+jQtxAHoTUV0niihThCVZkIOAUkxUUQBEw1QWRI0qsgCBKiEiAk1SRT2oACghqkpQ
+UAHi8jjdMMupHbMN02WyOhIBApBCAKgOkYAkCROgajyWKMYAKoqE5SAijFhhOR6D
+mcPIofmGxe7YITJk7x/4/+y7ekgOElXQ+SCGhEhIoTrSGI0nsiBAiecB8IAOtU1U
+ST2vlSRWYUSjRszhavM49hA3CPWy9YoZBtF4PrGsKKPGbMu1CNuGuArXjTkhj+Um
+Yx4sQXHkr0AEG6bGYmSMOLUdwzK5EGRI4hqeIhQFVQ1CqIp5HN0eM2waMTyEKEsK
+YMP7h8aZpCQDIotI4WVBEQGReIUoKo8VRKBIJFlTFSzwCq9AhQBCAAZiEOhEwJhn
+gTEQ55VUZVpcSGU2UTmTdIxyE7nVNuVqO69tGunLCvhG+bO99vIFxk4Ybrr029G/
+F6XmFRxsulD2nOvfsC9vy5iZ4ZpfB5Zldj3uuBo4Frrv27FraculwntruzeHG5J9
+0WeLI63NBZOnzG9+2TCAJj4rKkpt7bncc27gdGCFmvM0fM+uX5Afvlyyc3vdm9Sn
+ji77qO9joXDn7sqy19cfrZ505rabs14uezele+G6SVP3r1oydm/LkS9tvqJE8eC0
+rqLGknFm2ixUdw8sqHnip/36xgrnwefsyt73377O+V7Q0dk+68caIXMuKzfSblx5
+0Vg3esmp0nRPfaKu2H358FXv1V/v+j7saLqYPPn2cHdH9HTyeArvqeqc4Y8s35vZ
+nzv9/M99bYnjZbWbW+cuGyydPdd/Nv4HFF5K6A==
+=E1l4
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/kmcphillips
+
+==================================================================
+
+

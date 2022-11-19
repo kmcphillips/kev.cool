@@ -24,8 +24,6 @@
 /config/database.yml
 /config/secrets.yml
 
-public/keybase.txt
-
 /config/credentials/development.key
 /config/credentials/test.key
 /config/credentials/production.key
