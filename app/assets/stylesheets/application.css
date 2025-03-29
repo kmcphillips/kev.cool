@@ -22,10 +22,10 @@ div.centered {
   position: fixed;
   top: 50%;
   left: 50%;
-  margin-top: -120px;
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 h1 {
   font-size: 7em;
 }
-

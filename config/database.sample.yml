@@ -1,5 +1,5 @@
 default: &default
-  adapter: mysql2
+  adapter: trilogy
   pool: 5
   timeout: 5000
   username: root
