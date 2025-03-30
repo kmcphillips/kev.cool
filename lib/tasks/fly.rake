@@ -17,7 +17,7 @@ namespace :fly do
   #  - full access to secrets, databases
   #  - failures here result in VM being stated, shutdown, and rolled back
   #    to last successful deploy (if any).
-  task :server => :swapfile do
+  task :server => [:swapfile, :load_public] do
     sh 'bin/rails server'
   end
 
@@ -33,5 +33,12 @@ namespace :fly do
     sh 'mkswap /swapfile'
     sh 'echo 10 > /proc/sys/vm/swappiness'
     sh 'swapon /swapfile'
+  end
+
+  # This uses a GitHub public access token to load these assets from a private repo into the public folder here.
+  # It would be better in the Dockerfile because it would be clear what failed, but it means juggling the secret in a
+  # way that's annoying. This way it's just in `fly secrets set GITHUB_TOKEN=xxx` and runs on each server start.
+  task :load_public do
+    sh 'mkdir -p tmp/public && curl -H "Authorization: token ${GITHUB_TOKEN}" -L https://api.github.com/repos/kmcphillips/kev.cool_public/tarball | tar -xz --strip-components=1 -C tmp/public && cp -r tmp/public/public/* public/'
   end
 end
