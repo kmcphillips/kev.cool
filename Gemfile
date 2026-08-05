@@ -26,6 +26,8 @@ group :development, :test do
   gem "rails-controller-testing"
   gem "standard", ">= 1.56.0"
   gem "standard-rails"
+  gem "bundler-audit", require: false
+  gem "brakeman", require: false
 end
 
 group :development do
