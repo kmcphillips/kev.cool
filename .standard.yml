@@ -1,0 +1,4 @@
+ignore:
+  - db/migrate/**
+plugins:
+  - standard-rails

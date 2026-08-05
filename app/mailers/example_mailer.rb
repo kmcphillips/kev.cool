@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 class ExampleMailer < ApplicationMailer
   default to: -> { Rails.application.credentials.improvmx.email_test_recipient }
 
