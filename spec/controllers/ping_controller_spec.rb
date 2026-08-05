@@ -7,7 +7,7 @@ RSpec.describe PingController, type: :controller do
     it "has a list of tests" do
       get :index
       expect(response).to be_ok
-      expect(assigns(:tests).keys.sort).to eq(["mysql", "environment", "redis", "ruby", "release"].sort)
+      expect(assigns(:tests).keys.sort).to eq(["mysql", "environment", "redis", "rails", "ruby"].sort)
     end
   end
 end

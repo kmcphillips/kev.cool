@@ -17,22 +17,10 @@ namespace :fly do
   #  - full access to secrets, databases
   #  - failures here result in VM being stated, shutdown, and rolled back
   #    to last successful deploy (if any).
-  task server: [:swapfile, :load_public] do
+  # Swap is configured by `swap_size_mb` in fly.toml. The container runs as an
+  # unprivileged user, so it cannot set up a swapfile itself.
+  task server: [:load_public] do
     sh "bin/rails server"
-  end
-
-  # optional SWAPFILE task:
-  #  - adjust fallocate size as needed
-  #  - performance critical applications should scale memory to the
-  #    point where swap is rarely used.  'fly scale help' for details.
-  #  - disable by removing dependency on the :server task, thus:
-  #        task :server do
-  task :swapfile do
-    sh "fallocate -l 512M /swapfile"
-    sh "chmod 0600 /swapfile"
-    sh "mkswap /swapfile"
-    sh "echo 10 > /proc/sys/vm/swappiness"
-    sh "swapon /swapfile"
   end
 
   # This uses a GitHub public access token to load these assets from a private repo into the public folder here.

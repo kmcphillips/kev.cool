@@ -4,6 +4,7 @@ app = "kmcphillips-kev-cool"
 primary_region = "yyz"
 kill_signal = "SIGINT"
 kill_timeout = 5
+swap_size_mb = 512
 
 [build]
 [build.args]
@@ -47,5 +48,5 @@ restart_limit = 0
 timeout = "2s"
 
 [[statics]]
-guest_path = "/app/public"
+guest_path = "/rails/public"
 url_prefix = "/"
