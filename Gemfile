@@ -21,7 +21,7 @@ gem "sidekiq", "< 8.0" # This can be updated and is only used for the web consol
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
-  gem "debug", platforms: %i[mri mingw x64_mingw]
+  gem "debug"
   gem "rspec-rails"
   gem "rails-controller-testing"
   gem "standard", ">= 1.56.0"
