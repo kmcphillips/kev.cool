@@ -1,8 +1,8 @@
 # syntax=docker/dockerfile:1
 # check=error=true
 
-ARG RUBY_VERSION=4.0.7
-ARG BUNDLER_VERSION=4.0.22
+ARG RUBY_VERSION=4.0.9
+ARG BUNDLER_VERSION=4.0.23
 ARG BASE_PACKAGES="curl libjemalloc2"
 ARG BUILD_PACKAGES="git build-essential libpq-dev wget vim curl gzip default-libmysqlclient-dev libyaml-dev"
 
